@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+    php:
+        image: $API_IMAGE_NAME
+        container_name: $API_CONTAINER_NAME
+        restart: always
+        user: "1000:1000"
+        volumes:
+            - app:/var/www/html/app
+        networks:
+            - eth0
+        environment:
+            - APP_ENV=prod
+            - APP_VERSION

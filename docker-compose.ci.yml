@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+    php:
+        build:
+            context: .
+            dockerfile: ./.docker/Dockerfile
+        image: $APP_PHP_IMAGE_NAME
+        container_name: $APP_PHP_CONTAINER_NAME
+        user: "1000:1000"
+        environment:
+            - APP_ENV=test
+            - OPCACHE_ENABLE=1

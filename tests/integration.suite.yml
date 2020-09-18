@@ -1,0 +1,13 @@
+class_name: IntegrationTester
+modules:
+    enabled:
+        - Asserts
+        - ZendExpressive:
+            recreateApplicationBetweenTests: false
+            recreateApplicationBetweenRequests: false
+        - \Helper\Integration
+        - Doctrine2:     
+            depends: ZendExpressive
+        - DataFactory:
+            factories: './tests/_support/Factories'
+            depends: Doctrine2

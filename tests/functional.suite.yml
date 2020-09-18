@@ -1,0 +1,15 @@
+class_name: FunctionalTester
+modules:
+    enabled:
+        - Asserts
+        - ZendExpressive:
+            recreateApplicationBetweenTests: false
+            recreateApplicationBetweenRequests: false
+        - \Helper\Functional
+        - Doctrine2:
+            depends: ZendExpressive
+        - REST:
+            depends: ZendExpressive
+        - DataFactory:
+            factories: './tests/_support/Factories'
+            depends: Doctrine2
