@@ -73,6 +73,7 @@
                 <element value="magic methods"/>
                 <element value="public static methods, protected static methods, private static methods"/>
                 <element value="public methods, protected methods, private methods"/>
+                <element value="public static abstract methods, protected static abstract methods, public abstract methods, protected abstract methods, static constructors, destructor"/>
             </property>
         </properties>
     </rule>

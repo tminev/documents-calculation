@@ -22,7 +22,8 @@
         "mezzio/mezzio": "^3.2",
         "mezzio/mezzio-helpers": "^5.3",
         "monolog/monolog": "2.0.2",
-        "roave/security-advisories": "dev-master"
+        "roave/security-advisories": "dev-master",
+        "symfony/console": "4.4"
     },
     "require-dev": {
         "codeception/codeception": "4",
@@ -39,7 +40,8 @@
     "autoload": {
         "psr-4": {
             "Application\\": "src/Application/",
-            "Infrastructure\\": "src/Infrastructure/"
+            "Infrastructure\\": "src/Infrastructure/",
+            "Console\\": "src/Console/"
         }
     },
     "autoload-dev": {
@@ -63,6 +65,7 @@
         "clear-config-cache": "php bin/clear-config-cache.php",
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
-        "test-unit": "./vendor/bin/codecept run unit"
+        "test-unit": "./vendor/bin/codecept run unit",
+        "import": "php bin/console.php app:import"
     }
 }

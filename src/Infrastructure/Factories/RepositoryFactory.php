@@ -5,14 +5,6 @@ namespace Infrastructure\Factories;
 use Doctrine\Common\Persistence\ObjectRepository;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\EntityRepository;
-use Domain\ContactList\ContactList;
-use Domain\ContactList\ContactListRepositoryInterface;
-use Domain\Message\Message;
-use Domain\Message\MessageRepositoryInterface;
-use Domain\MessageQueue\MessageQueue;
-use Domain\MessageQueue\MessageQueueRepositoryInterface;
-use Domain\User\User;
-use Domain\User\UserRepositoryInterface;
 use Interop\Container\ContainerInterface;
 use Interop\Container\Exception\ContainerException;
 use Laminas\ServiceManager\Exception\ServiceNotCreatedException;
@@ -27,6 +19,7 @@ use Laminas\ServiceManager\Factory\AbstractFactoryInterface;
 class RepositoryFactory implements AbstractFactoryInterface
 {
     protected $interfaceEntityMap = [
+
     ];
 
     /**
