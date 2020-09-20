@@ -8,7 +8,7 @@ use Laminas\I18n\Validator\DateTime as ZendDateTime;
 /**
  * Validation for datetime
  *
- * @author Tihomir Minev <t.minev@net-surf.net>
+ * @author Grigor Milchev <grigor@devision.bg>
  */
 class DateTime extends ZendDateTime
 {

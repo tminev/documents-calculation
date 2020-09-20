@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "11a073df7cc5490680073e5e3fc6a394",
+    "content-hash": "9fea2905f25ecf20ea3d2ba4c4d968ad",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1170,6 +1170,76 @@
             "time": "2020-04-28T18:52:32+00:00"
         },
         {
+            "name": "mezzio/mezzio-fastroute",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mezzio/mezzio-fastroute.git",
+                "reference": "3e7d8ade90c3c2ef68a1f798c11c0c396ed40929"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mezzio/mezzio-fastroute/zipball/3e7d8ade90c3c2ef68a1f798c11c0c396ed40929",
+                "reference": "3e7d8ade90c3c2ef68a1f798c11c0c396ed40929",
+                "shasum": ""
+            },
+            "require": {
+                "fig/http-message-util": "^1.1.2",
+                "laminas/laminas-stdlib": "^2.0 || ^3.1",
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "mezzio/mezzio-router": "^3.0",
+                "nikic/fast-route": "^1.2",
+                "php": "^7.1",
+                "psr/container": "^1.0",
+                "psr/http-message": "^1.0.1"
+            },
+            "conflict": {
+                "container-interop/container-interop": "<1.2.0"
+            },
+            "replace": {
+                "zendframework/zend-expressive-fastroute": "self.version"
+            },
+            "require-dev": {
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "laminas/laminas-diactoros": "^1.7.1",
+                "laminas/laminas-stratigility": "^3.0",
+                "malukenho/docheader": "^0.1.6",
+                "mikey179/vfsstream": "^1.6.5",
+                "phpunit/phpunit": "^7.0.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev",
+                    "dev-develop": "3.1.x-dev"
+                },
+                "laminas": {
+                    "config-provider": "Mezzio\\Router\\FastRouteRouter\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mezzio\\Router\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "FastRoute integration for Mezzio",
+            "homepage": "https://mezzio.dev",
+            "keywords": [
+                "FastRoute",
+                "http",
+                "laminas",
+                "mezzio",
+                "middleware",
+                "psr",
+                "psr-7"
+            ],
+            "time": "2019-12-31T15:43:56+00:00"
+        },
+        {
             "name": "mezzio/mezzio-helpers",
             "version": "5.3.0",
             "source": {
@@ -1441,6 +1511,52 @@
                 "psr-3"
             ],
             "time": "2019-12-20T14:22:59+00:00"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
+                "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35|~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
+                }
+            ],
+            "description": "Fast request router for PHP",
+            "keywords": [
+                "router",
+                "routing"
+            ],
+            "time": "2018-02-13T20:26:39+00:00"
         },
         {
             "name": "nikic/php-parser",

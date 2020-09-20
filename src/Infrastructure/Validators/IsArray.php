@@ -9,7 +9,7 @@ use Traversable;
 /**
  * Validation for array
  *
- * @author Tihomir Minev <t.minev@net-surf.net>
+ * @author Grigor Milchev <grigor@devision.bg>
  */
 class IsArray extends AbstractValidator
 {

@@ -8,7 +8,7 @@ use Infrastructure\Validators\IsArray;
 /**
  * Class IsArrayTest
  *
- * @author Tihomir Minev <t.minev@net-surf.net>
+ * @author Grigor Milchev <grigor@devision.bg>
  */
 class IsArrayTest extends Unit
 {
