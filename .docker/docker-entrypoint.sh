@@ -23,11 +23,9 @@ then
 elif [ $APP_ENV = 'test' ];
 then
     composer development-enable
-    composer migrate-test-db
+
 fi
 
-composer orm-generate-proxies
-composer generate-docs
 
 #start php
 exec php-fpm -F

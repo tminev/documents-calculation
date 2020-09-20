@@ -12,3 +12,4 @@ services:
         environment:
             - APP_ENV=prod
             - APP_VERSION
+            - ALLOWED_CURRENCIES

@@ -13,4 +13,5 @@ services:
             - .:/var/www/html/app
         environment:
             - APP_ENV
-            - APP_VERSION            
+            - APP_VERSION     
+            - ALLOWED_CURRENCIES

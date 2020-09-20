@@ -45,7 +45,7 @@ class ImportCommand extends Command
     {
         $this->setName('app:import')
             ->setDescription('Import and calculate invoices')
-            ->addArgument('fileName', InputArgument::REQUIRED, 'Name of file to import.')
+            ->addArgument('path', InputArgument::REQUIRED, 'Path of file to import.')
             ->addArgument('exchangeRates', InputArgument::REQUIRED, 'List of exchange rates')
             ->addArgument('requestedCurrency', InputArgument::REQUIRED, 'Desired currency of the result')
             ->addOption('vat', null, InputOption::VALUE_REQUIRED, 'filter by vat identificator');
@@ -56,13 +56,18 @@ class ImportCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $fileName = $input->getArgument('fileName');
+        $path = $input->getArgument('path');
         $exchangeRates = $input->getArgument('exchangeRates');
         $requestedCurrency = $input->getArgument('requestedCurrency');
         $filter = $input->getOption('vat');
 
-        $output->writeln('Importing file: '. $fileName);
+        $output->writeln('Importing file: '. $path);
+        $data = $this->fileService->getFileContent($path);
+        $result = $this->fileService->process($data, $filter, $exchangeRates, $requestedCurrency);
 
+        foreach ($result as $key => $value) {
+            $output->writeln('Customer: '. $value[0]['customer'] . "(".$key.") - " . $value['totalАmount'] . "  " .$value[0]['currency']);
+        }
 
         return 0;
     }

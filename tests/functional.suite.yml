@@ -13,3 +13,4 @@ modules:
         - DataFactory:
             factories: './tests/_support/Factories'
             depends: Doctrine2
+        - Filesystem:

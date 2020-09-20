@@ -10,3 +10,4 @@ services:
         environment:
             - APP_ENV=test
             - OPCACHE_ENABLE=1
+            - ALLOWED_CURRENCIES       
