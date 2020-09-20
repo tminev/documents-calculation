@@ -94,6 +94,9 @@ docker-compose -f docker-compose.dev.yml exec -T php composer test-coverage
 
 #for code quality and all tests
 docker-compose -f docker-compose.dev.yml exec -T php composer check
+
+#for run the calculation
+php bin/console.php app:import Data/data.csv EUR:1,USD:0.987,GBP:0.878 GBP --vat=123465123
 ```
 
 ## Switching between development and production environment
