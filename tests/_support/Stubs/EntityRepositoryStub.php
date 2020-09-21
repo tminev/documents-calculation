@@ -8,7 +8,7 @@ use Infrastructure\Repositories\AbstractDoctrineBaseRepository;
 /**
  * Class EntityRepositoryStub
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class EntityRepositoryStub extends AbstractDoctrineBaseRepository implements RepositoryInterface
 {

@@ -7,7 +7,7 @@ use Doctrine\ORM\EntityManagerInterface;
 /**
  * Class TransactionManager
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class TransactionManager
 {

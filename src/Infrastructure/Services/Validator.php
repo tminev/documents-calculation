@@ -7,7 +7,7 @@ use Laminas\InputFilter\Factory;
 /**
  * Class Validator
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class Validator
 {

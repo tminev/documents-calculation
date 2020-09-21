@@ -8,7 +8,7 @@ use Codeception\Test\Unit;
 /**
  * Class ValidatorTest
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class ValidatorTest extends Unit
 {

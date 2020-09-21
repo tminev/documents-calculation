@@ -7,7 +7,7 @@ use League\Fractal\Serializer\ArraySerializer as FractalArraySerializer;
 /**
  * Class ArraySerializer
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class ArraySerializer extends FractalArraySerializer
 {

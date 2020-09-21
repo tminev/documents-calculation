@@ -9,7 +9,7 @@ use Codeception\Test\Unit;
 /**
  * Class LoggerTest
  *
- * @author Grigor Milchev <grigor@devision.bg>
+ * @author Tihomir Minev <t.minev@net-surf.net>
  */
 class LoggerTest extends Unit
 {
